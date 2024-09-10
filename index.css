@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección a columna para que los div queden uno debajo del otro */
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.solicita {
+  background-color: #e63946; /* Rojo bonito */
+  color: white;
+  padding: 0px 10px;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.solicita:hover {
+  background-color: #e63946; /* Un rojo un poco más oscuro al pasar el cursor */
+  transform: scale(1.1); /* Efecto de agrandar */
+}
+
+.nav-left .btn,
+.nav-right .btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-left .whatsapp {
+  background-color: white;
+}
+
+.nav-right .icon {
+  margin-right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: red;
+}
+
+
+@media (max-width: 768px) {
+  .nav-left, .nav-right {
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .nav-right .btn {
+    margin-bottom: 5px;
+  }
+}
+
+.icono {
+  width: 20px;
+  height: 20px;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+video {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e63946;
+}
